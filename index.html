@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SR GAMING</title>
+        <link rel="icon" href="pngwing.com.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">SRxGAMING</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#sec">About</a></li>
+                <li><a href="https://www.youtube.com/channel/UCZu_cGW0mgC7Nmj7ZAljrvQ">YouTube</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="star.png" id="star">
+            <img src="moon.png" id="moon">
+            <img src="mountB.png" id="mountB">
+            <img src="mountF.png" id="mountF">
+            <div class="cont">
+                <div id="text">SR GAMING</div>
+                <a href="#sec" id="btn">Explore</a>
+            </div>
+        </section>
+        <div class="sec" id="sec">
+            <h2>what are you looking at ??</h2>
+            <p>I'm Going To Be Honest. I Didn't Know What To Add Here, So I Added Some Thoughts. Thanks.
+
+                Sometimes, It's Perfectly Fine To Share Random Musings Or Reflections. It Can Be A Way To Express Yourself, Connect With Others, Or Even Spark Interesting Conversations. If You Have Anything Specific In Mind Or Would Like To Discuss A Particular Topic, Feel Free To Let Me Know, And I'd Be Happy To Help Expand On It.<br><br>Random tech, also known as emerging or disruptive technology, refers to innovations that are at the forefront of technological advancement, often pushing the boundaries of what we thought was possible. These technologies encompass a wide range of fields, from artificial intelligence to biotechnology and beyond. One such area is quantum computing, which holds the potential to revolutionize computing as we know it. Quantum computers use quantum bits (qubits) to perform calculations at speeds unimaginable with classical computers, promising breakthroughs in fields like cryptography, materials science, and optimization.<br><br>Another fascinating realm of random tech is augmented reality (AR) and virtual reality (VR). AR overlays digital information onto the real world, enhancing our perception and interaction with the environment. VR, on the other hand, immerses users in entirely digital environments, creating new possibilities for gaming, education, and training. These technologies are finding applications in diverse industries, from gaming and entertainment to healthcare and architecture.Another fascinating realm of random tech is augmented reality (AR) and virtual reality (VR). AR overlays digital information onto the real world, enhancing our perception and interaction with the environment. VR, on the other hand, immerses users in entirely digital environments, creating new possibilities for gaming, education, and training. These technologies are finding applications in diverse industries, from gaming and entertainment to healthcare and architecture.<br><br>In the healthcare sector, random tech is making waves with innovations like gene editing using CRISPR-Cas9. This revolutionary technology allows scientists to modify DNA with unprecedented precision, offering potential solutions for genetic diseases and advancing medical research. Additionally, 3D printing is transforming healthcare by enabling the creation of custom prosthetics, implants, and even human tissue.<br><br>Finally, the Internet of Things (IoT) is another exciting area of random tech. IoT connects everyday objects to the internet, allowing them to collect and exchange data. This technology is enhancing convenience and efficiency in our lives, from smart homes and wearable devices to industrial applications that optimize manufacturing processes and supply chains. As these technologies continue to evolve, they promise to reshape our world in ways we can only begin to imagine, opening up new opportunities and challenges for society.<br><br></p>
+        </div>
+        <script>
+            let star = document.getElementById('star');
+            let moon = document.getElementById('moon');
+            let mountB = document.getElementById('mountB');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountF = document.getElementById('mountF');
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                star.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountB.style.top = value * 0.5 + 'px';
+                mountF.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+    </html>
